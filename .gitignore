@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.virtualenv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+*.sqlite
+
+# Environment variables and secrets
+.env
+*.env
+
+# Cache files
+.cache/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.iml
+
+# macOS system files
+.DS_Store
+
+# Testing & coverage
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+pytest_cache/
+htmlcov/
+
+# MyPy and type hinting
+.mypy_cache/
+
+# Docker
+docker-compose.override.yml
+
+# Celery
+celerybeat-schedule
+
+# FastAPI & Uvicorn
+instance/
+*.pid
+
+# Temporary files
+*.swp
+*.swo
+*.swn

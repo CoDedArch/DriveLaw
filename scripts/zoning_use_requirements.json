@@ -1,0 +1,2053 @@
+{
+    "Agro-processing": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Airports/ports": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "tia_report",
+            "phase": "review",
+            "requires_traffic_study": true
+        }
+    ],
+    "Ambulance depots": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Ambulance services": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Ammunition storage": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Ancillary facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Ancillary offices": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Ancillary processing": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Ancillary services": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Animal husbandry": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Artisan shops": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Artisan workshops": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Banks": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Barracks": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Basic hospitalization": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Basic medical care": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Basic schools": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Boat building": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Campus retail": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Cement production": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "eia_report",
+            "phase": "review",
+            "requires_epa_approval": true
+        }
+    ],
+    "Chemical plants": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "eia_report",
+            "phase": "review",
+            "requires_epa_approval": true
+        }
+    ],
+    "Childcare facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Children's play areas": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Churches/mosques": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Clinics (<250m\u00b2)": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Clinics/pharmacies": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Club houses": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Cold storage": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Community centers": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Community facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Compound houses": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Corner shops": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Cottage industries": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Cultural facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Detached houses": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Detached/compound houses": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Diagnostic imaging": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Disaster response": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Dry cleaning": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Duplexes": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Eco-tourism": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "eia_report",
+            "phase": "review",
+            "requires_epa_approval": true
+        },
+        {
+            "code": "heritage_impact",
+            "phase": "review",
+            "requires_heritage_review": true
+        }
+    ],
+    "Electronics assembly": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Farm houses": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Fire stations": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Fishing": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Food processing": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Forestry/tree crops": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Freight terminals": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "tia_report",
+            "phase": "review",
+            "requires_traffic_study": true
+        }
+    ],
+    "Government buildings": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Government offices": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Guest houses/small hotels": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "fire_safety",
+            "phase": "approval"
+        }
+    ],
+    "Herbal clinics": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "High-rise apartments": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "tia_report",
+            "phase": "review",
+            "requires_traffic_study": true
+        }
+    ],
+    "Home businesses (max 2 employees)": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "tia_report",
+            "phase": "review",
+            "requires_traffic_study": true
+        }
+    ],
+    "Hostels/boarding houses": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Hotels": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "fire_safety",
+            "phase": "approval"
+        }
+    ],
+    "Hotels/resorts": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "fire_safety",
+            "phase": "approval"
+        }
+    ],
+    "Immunization": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Incidental structures": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Informal businesses": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "tia_report",
+            "phase": "review",
+            "requires_traffic_study": true
+        }
+    ],
+    "Institutional housing": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Intensive crop farming": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Jewelry making": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Laboratory services": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Libraries": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Limited recreation": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Limited timber harvesting": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Local markets": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "tia_report",
+            "phase": "review",
+            "requires_traffic_study": true
+        },
+        {
+            "code": "fire_safety",
+            "phase": "approval"
+        }
+    ],
+    "Low-intensity agriculture": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Maternal/child care": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Medical clinics": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Medical equipment": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Medical facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Medicinal plant cultivation": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Micro-retail (<20m\u00b2)": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Military facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Mining": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "eia_report",
+            "phase": "review",
+            "requires_epa_approval": true
+        },
+        {
+            "code": "geotechnical_report",
+            "phase": "review"
+        }
+    ],
+    "Minor surgery": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Mixed uses": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Mixed-use (residential/commercial)": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Motor repairs": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "fire_safety",
+            "phase": "approval"
+        }
+    ],
+    "Motor traders": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Multi-storey flats/apartments": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Nurseries": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Nursery/Primary/JHS": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "OPD services": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Offices": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Parking facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Parks/gardens": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Pastoral housing": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Places of worship (<250m\u00b2)": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Plantations": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Playgrounds": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Police posts": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Police training": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Power plants": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "eia_report",
+            "phase": "review",
+            "requires_epa_approval": true
+        }
+    ],
+    "Processing facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Professional offices": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Public open space": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "drainage_plan",
+            "phase": "review"
+        }
+    ],
+    "Public open spaces": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "drainage_plan",
+            "phase": "review"
+        }
+    ],
+    "Quarrying": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "geotechnical_report",
+            "phase": "review"
+        }
+    ],
+    "Regional markets": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "tia_report",
+            "phase": "review",
+            "requires_traffic_study": true
+        },
+        {
+            "code": "fire_safety",
+            "phase": "approval"
+        }
+    ],
+    "Religious schools": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Research activities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Research centers": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Research facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Residential above commercial": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Residential upgrading": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Restaurants/eating places": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Row houses": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "SHS/Vocational schools": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "School clinics": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Science labs": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Semi-detached houses": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Service industries": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Shops at ground floor level": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Slaughterhouses": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Small workshops": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Small-scale printing": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "fire_safety",
+            "phase": "approval"
+        }
+    ],
+    "Social centers": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Specialist clinics": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Specialist medical blocks": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Sports facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Sports fields": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Staff housing": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Staff quarters": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Street vending": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Student housing": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Students' hostels": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Tailoring": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Teachers' accommodation": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Teaching facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Timber production": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Universities/Polytechnics": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Vehicle assembly": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Warehousing (<50% area)": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        }
+    ],
+    "Waste facilities": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "eia_report",
+            "phase": "review",
+            "requires_epa_approval": true
+        }
+    ],
+    "Water treatment": [
+        {
+            "code": "site_plan",
+            "phase": "application"
+        },
+        {
+            "code": "ownership_documents",
+            "phase": "application"
+        },
+        {
+            "code": "building_permit_form",
+            "phase": "application"
+        },
+        {
+            "code": "eia_report",
+            "phase": "review",
+            "requires_epa_approval": true
+        }
+    ]
+}
