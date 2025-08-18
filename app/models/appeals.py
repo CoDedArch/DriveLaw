@@ -6,7 +6,7 @@ from sqlalchemy.orm import relationship
 class OffenseAppeal(Base, TimestampMixin):
     __tablename__ = 'offense_appeals'
     
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True,autoincrement=True)
     user_id = Column(Integer, ForeignKey('users.id'), nullable=False)
     offense_id = Column(Integer, ForeignKey('traffic_offenses.id'), nullable=False)
     
