@@ -308,6 +308,8 @@ async def get_offense_details(
         dueDate=offense.due_date.strftime("%Y-%m-%d"),
         severity=offense.severity.value
     )
+
+
 @router.post("/appeals", response_model=AppealResponse)
 async def create_user_appeal(
     request: Request,
