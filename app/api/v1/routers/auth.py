@@ -15,12 +15,10 @@ from app.services.otpService import OtpService
 from slowapi import Limiter
 from slowapi.util import get_remote_address
 from app.services.otpService import OTPVerificationStatus
-import os
-from dotenv import load_dotenv
 from app.core.security import decode_jwt_token
-# from app.core.config import settings
+from app.core.config import settings
 
-load_dotenv()
+FRONTEND_URL=settings.FRONTEND_URL
 
 
 router = APIRouter(
@@ -28,17 +26,34 @@ router = APIRouter(
     tags=["auth"]
 )
 
-oauth = OAuth()
-oauth.register(
-    name='google',
-    client_id=os.getenv("GOOGLE_CLIENT_ID"),
-    client_secret=os.getenv("GOOGLE_CLIENT_SECRET"),
-    server_metadata_url='https://accounts.google.com/.well-known/openid-configuration',
-    client_kwargs={'scope': 'openid email profile'}
-)
-
 otp_service = OtpService()
 limiter = Limiter(key_func=get_remote_address)
+
+def set_auth_cookie(response: JSONResponse, token: str, expires: timedelta):
+    """Helper function to set auth cookie with consistent attributes"""
+    if settings.ENVIRONMENT == "development":
+        response.set_cookie(
+            key="auth_token",
+            value=token,
+            httponly=True,
+            secure=settings.ENVIRONMENT == "production",
+            samesite="none" if settings.ENVIRONMENT == "production" else "lax",
+            domain=settings.COOKIE_DOMAIN,
+            path="/",
+            max_age=int(expires.total_seconds())
+        )
+    else:
+        response.set_cookie(
+            key="auth_token",
+            value=token,
+            httponly=True,
+            secure=True,
+            samesite="none",
+            domain=None,
+            path="/",
+            max_age=int(expires.total_seconds())
+        )
+
 
 @router.post("/send-otp", status_code=200)
 @limiter.limit("3/minute")
@@ -96,18 +111,8 @@ async def verify_otp(
 
         expires = timedelta(days=30) if user_remember_me else timedelta(hours=1)
 
-        response.set_cookie(
-            key="auth_token",
-            value=token,
-            httponly=True,
-            secure=False,  # Must be True for production
-            samesite="lax",
-            domain="localhost",  # Explicit domain for local development
-            path="/",  # Make cookie available for all paths
-            max_age=int(expires.total_seconds())
-        )
-
-        response.headers["Access-Control-Allow-Origin"] = "http://localhost:3000"
+        set_auth_cookie(response, token, expires)
+        response.headers["Access-Control-Allow-Origin"] = FRONTEND_URL
         response.headers["Access-Control-Allow-Credentials"] = "true"
 
         print("Cookie set in response:", response.headers.get("set-cookie"))
@@ -126,39 +131,7 @@ async def verify_otp(
         raise HTTPException(404, "OTP session not found.")
 
     raise HTTPException(500, "Unexpected error")
-        
-
-
-# Google login endpoint
-@router.get("/google/login")
-async def google_login(request: Request):
-    redirect_uri = request.url_for('google_callback')
-    return await oauth.google.authorize_redirect(request, redirect_uri)
-
-# Google callback endpoint
-@router.get("/google/callback")
-async def google_callback(request: Request, db: AsyncSession = Depends(aget_db)):
-    try:
-        token = await oauth.google.authorize_access_token(request)
-        user_info = await oauth.google.parse_id_token(request, token)
-
-        # You can access: user_info['email'], user_info['name'], user_info['sub'] (unique ID), etc.
-
-        # TODO: Create/find user in your DB
-        # user = await your_user_crud.get_or_create_user(user_info['email'], db)
-
-        return JSONResponse({
-            "message": "Google authentication successful",
-            "user": {
-                "name": user_info.get("name"),
-                "email": user_info.get("email"),
-                "sub": user_info.get("sub")
-            }
-        })
-
-    except Exception as e:
-        raise HTTPException(status_code=400, detail="Google login failed")
-    
+         
 # Create an Auth Me Route for the users
 
 @router.get("/me")

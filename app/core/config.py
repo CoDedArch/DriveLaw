@@ -2,9 +2,9 @@ import os
 import hashlib
 import logging
 from dotenv import load_dotenv
-from pydantic import Field
+from pydantic import Field, computed_field
 from pydantic_settings import BaseSettings
-from typing import ClassVar, List, Dict, Any
+from typing import ClassVar, List, Dict, Any, Optional
 
 load_dotenv(".env", override=True)
 logger = logging.getLogger(__name__)
@@ -34,6 +34,8 @@ class Settings(BaseSettings):
     EMAIL_FROM: str = os.getenv("EMAIL_FROM", "no-reply@versecatch.pro")
     BASE_URL: str = os.getenv("BASE_URL")
     PAYSTACK_SECRET_KEY: str = os.getenv("PAYSTACK_SECRET_KEY")
+    ENVIRONMENT: str = os.getenv("ENVIRONMENT")
+    FRONTEND_URL: str = os.getenv("FRONTEND_URL")
     ARKESEL_API_KEY: str = os.getenv("ARKESEL_API_KEY")
     ARKESEL_SENDER_ID: str = os.getenv("ARKESEL_SENDER_ID")
     DATA_DIR: str = Field(default="../../data",env="DATA_DIR")
@@ -47,6 +49,13 @@ class Settings(BaseSettings):
         "app.models.appeals",
         "app.models.offenses"
     ]
+
+    @computed_field
+    @property
+    def COOKIE_DOMAIN(self) -> Optional[str]:
+        """Computed field for cookie domain based on environment."""
+        return ".drivelaw.org" if self.ENVIRONMENT == "production" else None
+    
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
