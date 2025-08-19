@@ -1,5 +1,9 @@
 # app/api/driver_routes.py
-from fastapi import APIRouter, Depends, HTTPException, Request
+from enum import Enum
+from sqlite3 import IntegrityError
+import traceback
+import uuid
+from fastapi import APIRouter, Depends, File, Form, HTTPException, Request, UploadFile
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, func, and_, desc
 from typing import List, Optional
@@ -10,13 +14,14 @@ from app.models.offenses import TrafficOffense
 from app.models.payment import Payment
 from app.models.user import User
 from app.core.security import decode_jwt_token, get_current_user
-from app.core.constants import OffenseStatus, AppealStatus, PaymentStatus
+from app.core.constants import AppealReason, OffenseStatus, AppealStatus, PaymentStatus
 from pydantic import BaseModel
 
 from app.schemas.appeal import AppealResponse
 from app.schemas.dashboard import DashboardData, DashboardResponse
 from app.schemas.offense import OffenseResponse
 from app.schemas.payment import PaymentResponse
+from app.services.s3_uploadService import upload_file_to_s3
 
 router = APIRouter(prefix="/driver", tags=["driver"])
 
@@ -302,4 +307,123 @@ async def get_offense_details(
         evidence=offense.evidence_urls[0] if offense.evidence_urls else "",
         dueDate=offense.due_date.strftime("%Y-%m-%d"),
         severity=offense.severity.value
+    )
+@router.post("/appeals", response_model=AppealResponse)
+async def create_user_appeal(
+    request: Request,
+    offenseId: str = Form(...),
+    reason: AppealReason = Form(...),  # Validate against AppealReason enum
+    description: str = Form(...),
+    evidence: List[UploadFile] = File(default=[]),  # Changed to accept multiple files
+    db: AsyncSession = Depends(aget_db)
+):
+    """
+    Submit a new appeal for a traffic offense.
+    """
+    # Authenticate user
+    user = await get_current_user(request, db)
+
+    # Retrieve the offense
+    offense_query = select(TrafficOffense).where(
+        and_(
+            TrafficOffense.offense_number == offenseId,
+            TrafficOffense.user_id == user.id
+        )
+    )
+    offense_result = await db.execute(offense_query)
+    offense = offense_result.scalar_one_or_none()
+
+    if not offense:
+        raise HTTPException(status_code=404, detail="Offense not found or not associated with this user")
+    # Check for existing appeal for this offense and user
+    existing_appeal_query = select(OffenseAppeal).where(
+        and_(
+            OffenseAppeal.offense_id == offense.id,
+            OffenseAppeal.user_id == user.id,
+            OffenseAppeal.is_active == True  # Only check active appeals
+        )
+    )
+    existing_appeal = (await db.execute(existing_appeal_query)).scalar_one_or_none()
+
+    if existing_appeal:
+        raise HTTPException(
+            status_code=400,
+            detail=f"An active appeal (ID: {existing_appeal.appeal_number}) already exists for offense {offenseId}"
+        )
+    # Generate a unique appeal number
+    appeal_number = f"APP{uuid.uuid4().hex[:6].upper()}"
+    supporting_docs: List[str] = []
+
+    # Handle file upload
+    if evidence:
+         for file in evidence:
+            try:
+                url = await upload_file_to_s3(
+                    file,
+                    folder="uploads/application_documents",
+                    username=user.first_name or user.email
+                )
+                supporting_docs.append(url)
+            except Exception as e:
+                print("UPLOAD ERROR:", traceback.format_exc())
+                raise HTTPException(status_code=500, detail=f"Upload failed for {file.filename}: {str(e)}")
+    try:
+        new_appeal = OffenseAppeal(
+            user_id=user.id,
+            offense_id=offense.id,
+            appeal_number=appeal_number,
+            reason=reason,  # Validated by AppealReason enum
+            description=description,
+            supporting_documents= supporting_docs,
+            submission_date=datetime.utcnow(),
+            status=AppealStatus.UNDER_REVIEW,
+            is_active=True
+        )
+        db.add(new_appeal)
+
+        # Update user statistics
+        stats_query = select(OffenseStatistics).where(OffenseStatistics.user_id == user.id)
+        stats_result = await db.execute(stats_query)
+        stats = stats_result.scalar_one_or_none()
+
+        if stats:
+            stats.pending_appeals += 1
+        else:
+            stats = OffenseStatistics(
+                user_id=user.id,
+                pending_appeals=1,
+                total_offenses=0,
+                total_fines_amount=0.0,
+                total_paid_amount=0.0,
+                successful_appeals=0,
+                driving_score=100,
+                last_calculated=datetime.utcnow()
+            )
+            db.add(stats)
+
+        await db.commit()
+        await db.refresh(new_appeal)
+
+    except IntegrityError as e:
+        if "duplicate key value violates unique constraint" in str(e):
+            raise HTTPException(
+                status_code=400,
+                detail="Failed to create appeal due to a duplicate appeal number or ID. Please try again."
+            )
+        raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}")
+
+    # Return structured response
+    return AppealResponse(
+        id=new_appeal.appeal_number,
+        offenseId=offense.offense_number,
+        offenseType=offense.offense_type.value,
+        location=offense.location,
+        submissionDate=new_appeal.submission_date.strftime("%Y-%m-%d"),
+        status=new_appeal.status.value,
+        reason=new_appeal.reason.value if isinstance(new_appeal.reason, Enum) else new_appeal.reason,
+        description=new_appeal.description,
+        responseDate=None,
+        reviewerNotes=None
     )
