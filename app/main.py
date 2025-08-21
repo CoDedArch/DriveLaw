@@ -12,7 +12,7 @@ from app.api.v1.routers.payments import router as payment_router
 from app.api.v1.routers.notifications import router as notifications_router
 from app.api.v1.routers.driver import router as driver_router
 from app.api.v1.routers.officer import router as officer_router
-
+from app.api.v1.routers.admin import router as admin_router
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
@@ -133,4 +133,7 @@ app.include_router(onboarding_router, tags=["onboarding"])
 app.include_router(upload_router, tags=["uploads"])
 app.include_router(notifications_router, tags=["notifications"])
 app.include_router(driver_router, tags=["driver"])
+
 app.include_router(officer_router, tags=["officer"])
+app.include_router(admin_router, tags=["admin"])
+
